@@ -72,13 +72,13 @@ function move(num) {
 }
 function bounce() {
     if (dir.horizontal) {
-            dir.horizontal = 0;
-        } else {
-            dir.horizontal = 2 * Math.floor(2 * Math.random()) - 1;
-        }
-        if (dir.vertical) {
-            dir.vertical = 0;
-        } else {
-            dir.vertical = 2 * Math.floor(2 * Math.random()) - 1;
-        }
+        dir.horizontal = 0;
+    } else {
+        dir.horizontal = 2 * Math.floor(2 * Math.random()) - 1;
+    }
+    if (dir.vertical) {
+        dir.vertical = 0;
+    } else {
+        dir.vertical = 2 * Math.floor(2 * Math.random()) - 1;
+    }
 }
