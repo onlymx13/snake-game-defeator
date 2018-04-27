@@ -64,8 +64,8 @@ function main() {
         } while (true);
         context.putImageData(bluePixel, x, y);
     }
-}
-               },200);
+},200);
+               }
 function move(num) {
     if (num >= 0) {
         for (var i = 0; i < num; i++) {
