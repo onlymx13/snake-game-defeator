@@ -15,6 +15,7 @@ function main() {
     if (file) {
         reader.readAsDataURL(file);
     }
+    setTimeout(function(){
     mycanvas = document.getElementById('mycanvas');
     mycanvas.width = img.width;
     mycanvas.height = img.height;
@@ -64,7 +65,7 @@ function main() {
         context.putImageData(bluePixel, x, y);
     }
 }
-
+               },200);
 function move(num) {
     if (num >= 0) {
         for (var i = 0; i < num; i++) {
